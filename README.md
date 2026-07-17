@@ -4,6 +4,33 @@ Welcome to the **StarFish Resource Booking Application**! This repository contai
 
 ---
 
+## 🌟 What the Application Does
+
+The StarFish Resource Booking Application is a resource-scheduling platform designed to prevent scheduling conflicts and streamline resource allocation. Key features include:
+
+- **Resource Catalog**: Users can browse different categories of assets (Projectors, Auditorium/Halls, Sports Kits, Meeting Rooms, etc.) and view their real-time availability.
+- **Booking Flow**: Users can schedule bookings by selecting date ranges and time slots.
+- **Conflict Detection & Prevention**: The system automatically detects scheduling conflicts when booking overlapping slots for the same resource, preventing double bookings.
+- **Smart Waitlist Management**: If a resource is already booked, users have the option to join a waitlist. If the primary booking is cancelled, waitlisted users can be processed or promoted.
+
+---
+
+## 🔑 Django Admin Portal & Superuser Credentials
+
+The application includes a pre-configured SQLite database containing a superuser account for administrators to manage resources, bookings, and the waitlist.
+
+- **Admin URL**: `http://localhost:8000/admin`
+- **Username**: `Roronoa`
+- **Password**: `Zoro`
+
+### What the Admin Portal Does:
+- **Manually Manage Bookings**: Administrators can view, edit, delete, or create bookings directly from the dashboard.
+- **Approve or Reject Waitlist**: Manually manage the status of bookings (Confirmed, Waitlisted, Rejected) using custom admin actions.
+- **Conflict Resolution**: Resolve conflicts by approving a waitlisted booking and rejecting any other overlapping bookings/waitlists for the same resource slot.
+- **Conflict Detection**: View conflicts for each slot and resolve bookings manually to ensure scheduling integrity.
+
+---
+
 ## 🛠️ Tech Stack & Architecture
 
 The application is structured into two main components:
